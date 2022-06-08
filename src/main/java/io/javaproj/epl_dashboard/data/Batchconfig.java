@@ -26,7 +26,7 @@ import io.javaproj.epl_dashboard.model.Match;
 public class Batchconfig {
 
     private final String[] FIELD_NAMES = new String[] {
-            "id", "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR", "HTGS", "ATGS", "HTGC", "ATGC",
+            "id", "Date", "homeTeam", "awayTeam", "FTHG", "FTAG", "FTR", "HTGS", "ATGS", "HTGC", "ATGC",
             "HTP", "ATP", "HM1", "HM2", "HM3", "HM4", "HM5", "AM1", "AM2", "AM3", "AM4", "AM5", "MW", "HTFormPtsStr",
             "ATFormPtsStr", "HTFormPts", "ATFormPts",
             "HTWinStreak3", "HTWinStreak5", "HTLossStreak3", "HTLossStreak5", "ATWinStreak3", "ATWinStreak5",
@@ -64,7 +64,7 @@ public class Batchconfig {
         return new JdbcBatchItemWriterBuilder<Match>()
                 .itemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<>())
                 .sql("INSERT INTO match(id, date,home_team,away_team,fthg,ftag,ftr,htgs,atgs,htgc,atgc, hm1, hm2, hm3, hm4, hm5, am1, am2, am3, am4, am5, mw,htform_pts_str,atform_pts_str, htwin_streak3, htwin_streak5, atwin_streak3, atwin_streak5, atloss_streak3, atloss_streak5, htgd, atgd) "
-                        + " VALUES (:id,:Date,:HomeTeam,:AwayTeam,:FTHG,:FTAG,:FTR,:HTGS,:ATGS,:HTGC,:ATGC,:HM1,:HM2,:HM3,:HM4,:HM5,:AM1,:AM2,:AM3,:AM4,:AM5,:MW,:HTFormPtsStr,:ATFormPtsStr,:HTWinStreak3,:HTWinStreak5,:ATWinStreak3,:ATWinStreak5,:ATLossStreak3,:ATLossStreak5,:HTGD,:ATGD)")
+                        + " VALUES (:id,:date,:homeTeam,:awayTeam,:FTHG,:FTAG,:FTR,:HTGS,:ATGS,:HTGC,:ATGC,:HM1,:HM2,:HM3,:HM4,:HM5,:AM1,:AM2,:AM3,:AM4,:AM5,:MW,:HTFormPtsStr,:ATFormPtsStr,:HTWinStreak3,:HTWinStreak5,:ATWinStreak3,:ATWinStreak5,:ATLossStreak3,:ATLossStreak5,:HTGD,:ATGD)")
                 .dataSource(dataSource)
                 .build();
     }
