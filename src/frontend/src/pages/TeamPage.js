@@ -1,7 +1,10 @@
 import { React , useEffect, useState} from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { MatchDetailCard } from '../components/MatchDetailCard';
 import { MatchSmallCard } from '../components/MatchSmallCard';
+
+
+import './TeamPage.scss';
 
 export const TeamPage = () => {
 
@@ -30,9 +33,17 @@ export const TeamPage = () => {
   
 
     <div className="TeamPage">
-     <h1>{team.teamName}</h1>
+    <div className='team-name-section'><h1 className='team-name'>{team.teamName}</h1></div>
+    
+   
+    <div className='match-detail-section'>
+    <h3>Latest Match</h3>
      <MatchDetailCard match={team.matches[0]}/>
+     </div>
      {team.matches.slice(1).map(match => <MatchSmallCard teamName={team.teamName} match={match}/>)}
+     <div className='more-info'>
+     <Link to={`/teams/${teamName}/matches/${process.env.REACT_APP_DATA_END_YEAR}`}>More &gt;</Link>
+     </div>
     </div>
   );
 }

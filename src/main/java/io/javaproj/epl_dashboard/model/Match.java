@@ -96,7 +96,7 @@ public class Match {
     }
 
     public void setFTR(String fTR) {
-        FTR = fTR;
+        this.FTR = fTR;
     }
 
     public Integer getHTGS() {
