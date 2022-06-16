@@ -3,11 +3,11 @@
     grid-template-columns: 1fr 6fr;
     grid-column-gap: 8px;
 
-.year-selector{
+    .year-selector{
     justify-self: end;
     padding: 20px;
-}
-.page-heading{
-    margin-bottom: 30px;
-}
+    }
+    .page-heading{
+    margin-bottom: 20px auto;
+    }
 }
