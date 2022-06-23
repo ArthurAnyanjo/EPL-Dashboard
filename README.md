@@ -18,7 +18,7 @@ https://www.kaggle.com/datasets/saife245/english-premier-league
 # Action Shots
 
 ### Match Page
-![Match-Page] https://github.com/ArthurAnyanjo/EPL-Dashboard/blob/90591731b44abc3f19aa28117613474719cf2532/src/readme/.png
+![Match-Page](https://github.com/ArthurAnyanjo/EPL-Dashboard/blob/4124672c2b7326552e718744547788a16655eb1b/src/readme/Screenshot(1).png)
 
 
 ### Match Page
