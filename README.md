@@ -16,3 +16,12 @@ An EPL dashboard that allows users to browse through different english teams and
 https://www.kaggle.com/datasets/saife245/english-premier-league
 
 # Action Shots
+
+### Match Page
+![Match-Page] https://github.com/ArthurAnyanjo/EPL-Dashboard/blob/90591731b44abc3f19aa28117613474719cf2532/src/readme/.png
+
+
+### Match Page
+![Team-Page](https://github.com/ArthurAnyanjo/EPL-Dashboard/blob/90591731b44abc3f19aa28117613474719cf2532/src/readme/Screenshot%20(8).png)
+
+
