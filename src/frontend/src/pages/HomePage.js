@@ -1,8 +1,5 @@
 import { React, useEffect, useState } from 'react'
-//import { useParams, Link } from 'react-router-dom';
 import { TeamTile } from '../components/TeamTiles';
-
-
 import './HomePage.scss';
 
 export const HomePage = () => {
@@ -13,7 +10,7 @@ export const HomePage = () => {
 
         () => {
             const fetchAllTeams = async () => {
-                const response = await fetch(`http://localhost:8080/team/`);
+                const response = await fetch(`${process.env.REACT_APP_API_ROOT_URL}/team`);
                 const data = await response.json();
                 setTeams(data)
             };
